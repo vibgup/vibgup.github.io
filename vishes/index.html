@@ -43,14 +43,17 @@
 
     <style type="text/css">
       .section {
-        text-align: center;
+        /*text-align: center;*/
         color: white;
         font-family: 'Lato', sans-serif;
       }
       .section h1{
         font-size: 6em;
-        text-align: center;
+        /*text-align: center;*/
         font-family: 'Lobster', cursive;
+      }
+      .text-center{
+        text-align: center;
       }
       /* Defining each sectino background and styles
       * --------------------------------------- */
@@ -74,58 +77,102 @@
         background: -webkit-linear-gradient(#d24b29, #eaca5a);
         background: linear-gradient(#d24b29, #eaca5a);
       }
-
+      .img-responsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+      }
+      .fix-width{
+        max-width: 1000px;
+        margin: auto;
+      }
+      .margin-auto{
+        margin: auto;
+      }
     </style>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 
   </head>
   <body>
     <div id="fullpage">
         <div class="section" id="intro">
-          <h1>
+          <h1 class="text-center">
             Intro
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          </p>
-          <p>
-            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
-          </p>
         </div>
         <div class="section" id="invite">
-          <h1>
+          <h1 class="text-center">
             Invite
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          </p>
-          <p>
-            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
-          </p>
+          <div class="text-center fix-width">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <p>
+              Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
+            </p>
+          </div>
         </div>
         <div class="section" id="sangeet-sagai">
-          <h1>
-            Sangeet and Sagai
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          </p>
-          <p>
-            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
-          </p>
+          <div class="row">
+              <div class="col-xs-12">
+                <h1 class="text-center">
+                  Sangeet and Sagai
+                </h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div>
+                  <img class="img-responsive" src="http://placehold.it/500x500" alt="placeholder">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 margin-auto">
+                <p>
+                  <strong>Date:</strong> 27th April
+                </p>
+                <p>
+                  <strong>Time:</strong> 7:00 PM
+                </p>
+                <p>
+                  <strong>Venue:</strong> <a target="_blank" href="https://www.google.co.in/maps/place/Dee+Marks+Hotel+%26+Resorts/@28.5351981,77.1115572,17z/data=!3m1!4b1!4m5!3m4!1s0x390d1c0e29a92d55:0xa546825a208ee40d!8m2!3d28.5351934!4d77.1137512?hl=en">Dee Marks Hotel and Resort</a>
+                </p>
+              </div>
+          </div>
         </div>
         <div class="section" id="shaadi-reception">
-          <h1>
-            Shaadi and Reception
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          </p>
-          <p>
-            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
-          </p>
+          <div class="row">
+              <div class="col-xs-12">
+                <h1 class="text-center">
+                  Shaadi and Reception
+                </h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div>
+                  <img class="img-responsive" src="http://placehold.it/500x500" alt="placeholder">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 margin-auto">
+                <div class="">
+                  <p>
+                    <strong>Date:</strong> 28th April
+                  </p>
+                  <p>
+                    <strong>Time:</strong> 5:00 PM
+                  </p>
+                  <p>
+                    <strong>Venue:</strong> <a target="_blank" href="https://www.google.co.in/maps/place/Mapple+Emerald/@28.5217232,77.099697,15z/data=!4m12!1m6!3m5!1s0x0:0xc13cc843b7823b9e!2sMapple+Emerald!8m2!3d28.5217232!4d77.099697!3m4!1s0x0:0xc13cc843b7823b9e!8m2!3d28.5217232!4d77.099697">Mapple Emerald</a>
+                  </p>
+                </div>
+              </div>
+          </div>
         </div>
         <div class="section" id="rsvp">
-          <h1>
+          <h1 class="text-center">
             RSVP
           </h1>
           <p>
