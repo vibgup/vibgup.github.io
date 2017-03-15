@@ -1,165 +1,140 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vibhav weds Shruti</title>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Responsive - fullPage.js</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage responsive feature for small screen devices" />
-	<meta name="keywords"  content="fullpage,jquery,demo,responsive,feature,media,queries,tablets,phones,screen,small" />
-	<meta name="Resource-type" content="Document" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lobster" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
-	<link rel="stylesheet" type="text/css" href="fullpage.js/jquery.fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="fullpage.js/jquery.fullpage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['intro', 'invite', 'sangeet', 'shaadi', 'reception', 'rsvp'],
-				sectionsColor: ['#DAC500', '#1BBC9B', '#7E8F7C', '#DAC500', '#1BBC9B', '#7E8F7C'],
-				menu: '#menu',
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Intro', 'Invite', 'Sangeet Sagai', 'Shaadi', 'Reception', 'RSVP'],
-				responsiveWidth: 1100
-			});
-		});
-	</script>
-
-</head>
-<body>
-
-<ul id="menu">
-	<li data-menuanchor="intro"><a href="#intro">Intro</a></li>
-  <li data-menuanchor="invite"><a href="#invite">Invite</a></li>
-  <li data-menuanchor="sangeet"><a href="#sangeet">Sangeet</a></li>
-  <li data-menuanchor="shaadi"><a href="#shaadi">Shaadi</a></li>
-  <li data-menuanchor="reception"><a href="#reception">Reception</a></li>
-  <li data-menuanchor="rsvp"><a href="#rsvp">RSVP</a></li>
-</ul>
-
-<div id="fullpage">
-
-	<div class="section " id="intro">
-		<div class="intro">
-			<h1>Intro</h1>
-		</div>
-	</div>
-
-	<div class="section" id="invite">
-		<div class="intro">
-			<h1>Invite</h1>
-		</div>
-	</div>
-
-  <div class="section" id="sangeet">
-		<div class="intro">
-			<h1>Sangeet</h1>
-		</div>
-	</div>
-
-  <div class="section" id="shaadi">
-		<div class="intro">
-			<h1>Shaadi</h1>
-		</div>
-	</div>
-
-  <div class="section" id="reception">
-		<div class="intro">
-			<h1>Reception</h1>
-		</div>
-	</div>
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="vendors/jquery.easings.min.js"></script>
 
 
-  <div class="section" id="rsvp">
-		<div class="intro">
-			<h1>RSVP</h1>
-		</div>
-	</div>
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-</div>
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+    <!-- <script type="text/javascript" src="jquery.fullpage.extensions.min.js"></script> -->
 
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        css3: true,
+        // anchors:['intro', 'invite', 'sangeet-sagai', 'shaadi-reception', 'rsvp'],
+        // sectionsColor: ['#8beaf7', '#fe87a1', '#ec4e7f', '#df4a4d', '#44b4c6'],
+        // sectionsColor: ['#1d125e', '#8f58c0', '#a62156', '#91282f', '#451443'],
+        // sectionsColor: ['#4ca7c3', '#c9ac67', '#f66496', '#f06867', '#e2533c'],
+        sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#eaca5a'], // INFO: color left out #3244b6
+        scrollingSpeed: 700,
+        // fadingEffect: true,
+        animateAnchor: true,
+        recordHistory: false,
+        navigation: true,
+        // navigationPosition: 'right',
+        navigationTooltips: ['Welcome', 'Invite', 'Sangeet', 'Shaadi', 'RSVP'],
+        responsiveWidth: 900,
+      });
+    });
+    </script>
 
-<!-- <div id="infoMenu">
+    <style type="text/css">
+      .section {
+        text-align: center;
+        color: white;
+        font-family: 'Lato', sans-serif;
+      }
+      .section h1{
+        font-size: 6em;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+      }
+      /* Defining each sectino background and styles
+      * --------------------------------------- */
+      #invite{
+        background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#faa127));
+        background: -webkit-linear-gradient(#31a0c4, #faa127);
+        background: linear-gradient(#31a0c4,#faa127);
+      }
+      #sangeet-sagai{
+        background: -webkit-gradient(linear, top left, bottom left, from(#faa127), to(#de4a93));
+        background: -webkit-linear-gradient(#faa127, #de4a93);
+        background: linear-gradient(#faa127,#de4a93);
+      }
+      #shaadi-reception{
+        background: -webkit-gradient(linear, top left, bottom left, from(#de4a93), to(#d24b29));
+        background: -webkit-linear-gradient(#de4a93, #d24b29);
+        background: linear-gradient(#de4a93, #d24b29);
+      }
+      #rsvp{
+        background: -webkit-gradient(linear, top left, bottom left, from(#d24b29), to(#eaca5a));
+        background: -webkit-linear-gradient(#d24b29, #eaca5a);
+        background: linear-gradient(#d24b29, #eaca5a);
+      }
 
+    </style>
 
-<ul>
-    <li><a href="http://alvarotrigo.com/fullPage/utils/wordpress.html">Wordpress theme</a></li>
-	<li><a href="https://github.com/alvarotrigo/fullPage.js/archive/master.zip">Download</a></li>
-	<li>
-		<a href="#" id="showExamples">Examples</a>
-		<div id="examplesList">
-			<div class="column">
-				<h3>Navigation</h3>
-				<ul>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/scrollBar.html">Scroll Bar Enabled</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/normalScroll.html">Normal scrolling</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/continuous.html">Continuous vertical</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/noAnchor.html">Without anchor links (same URL)</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/navigationV.html">Vertical navigation dots</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/navigationH.html">Horizontal navigation dots</a></li>
-				</ul>
-			</div>
-			<div class="column">
-				<h3>Design</h3>
-				<ul>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/responsive.html">Responsive</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/backgrounds.html">Full backgrounds</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/fixedBackgrounds.html">Fixed backgrounds</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/videoBackground.html">Full background videos</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/autoHeight.html">Auto-height sections</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/gradientBackgrounds.html">Gradient backgrounds</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/scrolling.html">Scrolling inside sections and slides</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/fixedHeaders.html">Adding fixed header and footer</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/oneSection.html">One single section</a></li>
-				</ul>
-			</div>
-			 <div class="column">
-                <h3>Extensions</h3>
-                <ul>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/parallax.html">Parallax</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/continuous-horizontal.html">Continuous horizontal</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/interlocked-slides.html">Interlocked Slides</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/reset-sliders.html">Reset Sliders</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/responsive-slides.html">Responsive Slides</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/scroll-horizontally.html">Horizontal mouse wheel</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/fading-effect.html">Fading Effect</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/offset-sections.html">Offset Sections</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/drag-and-move.html">Drag And Move</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/scrolloverflow-reset.html">ScrollOverflow Reset</a></li>
-                </ul>
-            </div>
-			<div class="column">
-				<h3>Other</h3>
-				<ul>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/apple.html">Animations on scrolling</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/callbacks.html">Callbacks</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/autoplayVideoAndAudio.html">Autoplay media</a></li>
-					<li><a href="http://alvarotrigo.com/fullPage/examples/methods.html">Functions and methods</a></li>
-                    <li><a href="http://alvarotrigo.com/fullPage/extensions/#navigation">Extra navigations</a></li>
-				</ul>
-			</div>
-		</div>
-
-	</li>
-	<li><a href="https://github.com/alvarotrigo/fullPage.js#fullpagejs">Documentation</a></li>
-	<li><a href="http://alvarotrigo.com/#contact-page">Contact</a></li>
-</ul>
-
-</div> -->
-
-</body>
+  </head>
+  <body>
+    <div id="fullpage">
+        <div class="section" id="intro">
+          <h1>
+            Intro
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <p>
+            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
+          </p>
+        </div>
+        <div class="section" id="invite">
+          <h1>
+            Invite
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <p>
+            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
+          </p>
+        </div>
+        <div class="section" id="sangeet-sagai">
+          <h1>
+            Sangeet and Sagai
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <p>
+            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
+          </p>
+        </div>
+        <div class="section" id="shaadi-reception">
+          <h1>
+            Shaadi and Reception
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <p>
+            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
+          </p>
+        </div>
+        <div class="section" id="rsvp">
+          <h1>
+            RSVP
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna dui, congue at massa ac, consectetur mollis nisl. Suspendisse lectus arcu, hendrerit non libero ut, faucibus auctor ex. Sed eu arcu luctus, mollis nulla ac, molestie justo. Fusce quis dapibus felis, ac condimentum ante. Fusce a laoreet sapien. Mauris eleifend a arcu at tincidunt. Vivamus pulvinar sapien sed eros convallis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <p>
+            Morbi vehicula imperdiet mauris, quis convallis odio ultrices sed. Donec vestibulum elit elit. Vestibulum dui dolor, vestibulum vitae congue et, consequat maximus magna. Proin sagittis cursus sem nec interdum. Vivamus a elementum dolor. In eget sapien viverra, congue ipsum vitae, hendrerit quam. Nulla placerat pretium metus venenatis sollicitudin. Aliquam elementum nec massa sit amet aliquet. Etiam in urna eget turpis dapibus suscipit.
+          </p>
+        </div>
+    </div>
+  </body>
 </html>
