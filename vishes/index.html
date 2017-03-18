@@ -38,6 +38,45 @@
         navigationTooltips: ['Welcome', 'Invite', 'Sangeet', 'Shaadi', 'RSVP'],
         responsiveWidth: 900,
       });
+
+      //Program a custom submit function for the form
+      $("form#mG61Hd").submit(function(event){
+
+        //disable the default form submission
+        event.preventDefault();
+
+        //grab all form data
+        var formData = new FormData($(this)[0]);
+
+        $.ajax({
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSdjJTUGUKeN-x-baU13DoBXaxSll04L28YNlRnivTGEHcmqnQ/formResponse',
+          type: 'POST',
+          data: formData,
+          async: false,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function (returndata) {
+            console.log(returndata);
+            alert(returndata);
+          },
+          error: function (returndata) {
+            console.log(returndata);
+          }
+        });
+
+        return false;
+      });
+
+      $(".checkbox-check").on('change', function() {
+        if ($(this).is(':checked')) {
+          $(this).attr('value', 'true');
+        } else {
+          $(this).attr('value', 'false');
+        }
+      });
+
+
     });
     </script>
 
@@ -176,7 +215,25 @@
             RSVP
           </h1>
           <div class="text-center fix-width">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjJTUGUKeN-x-baU13DoBXaxSll04L28YNlRnivTGEHcmqnQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+            <form id="mG61Hd" action="" method="POST" target="no-target">
+              Name: <input type="text" autocomplete="off" tabindex="0" name="entry.2079980770" value="" required/><br/>
+              Email: <input type="email" autocomplete="off" tabindex="0" name="entry.1649810083" value="" required/><br/>
+              Number: <input type="tel" autocomplete="off" tabindex="0" name="entry.198363389" value="" required/><br/>
+              Attendance:
+              <input type="radio" name="entry.1074380710" value="Attending" required> Attending&nbsp;
+              <input type="radio" name="entry.1074380710" value="Not Attending" required> Not Attending&nbsp;
+              <input type="radio" name="entry.1074380710" value="Maybe" required> Maybe<br/>
+              Accomodation: <input type="checkbox" name="entry.268459441" value="true"><br/>
+              +1: <input type="checkbox" name="entry.675501304" value="true"><br/>
+              Message: <textarea tabindex="0" aria-label="Message" name="entry.1055560578"></textarea><br/>
+              <input type="hidden" name="fvv" value="1" /><br/>
+              <input type="hidden" name="draftResponse" value="[null,null,&quot;-575617995234521185&quot;] /"><br/>
+              <input type="hidden" name="pageHistory" value="0" /><br/>
+              <input type="hidden" name="fbzx" value="-575617995234521185" /><br/>
+              <button type="submit" form="mG61Hd" value="Submit">Submit</button>
+            </form>
+
           </div>
         </div>
     </div>
