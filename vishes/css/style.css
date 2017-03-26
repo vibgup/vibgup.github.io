@@ -1,0 +1,84 @@
+.section {
+  /*text-align: center;*/
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+.section h1{
+  font-size: 6em;
+  /*text-align: center;*/
+  font-family: 'Lobster', cursive;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#invite{
+  background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#faa127));
+  background: -webkit-linear-gradient(#31a0c4, #faa127);
+  background: linear-gradient(#31a0c4,#faa127);
+}
+#sangeet-sagai{
+  background: -webkit-gradient(linear, top left, bottom left, from(#faa127), to(#de4a93));
+  background: -webkit-linear-gradient(#faa127, #de4a93);
+  background: linear-gradient(#faa127,#de4a93);
+}
+#shaadi-reception{
+  background: -webkit-gradient(linear, top left, bottom left, from(#de4a93), to(#d24b29));
+  background: -webkit-linear-gradient(#de4a93, #d24b29);
+  background: linear-gradient(#de4a93, #d24b29);
+}
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+.fix-width{
+  max-width: 1000px;
+  margin: auto;
+}
+.margin-auto{
+  margin: auto;
+}
+
+
+
+/*
+  Form Styling
+ */
+
+#rsvp input[type=text],input[type=email],input[type=tel]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+#rsvp textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+#rsvp button{
+  border: none;
+  padding: 8px 15px 8px 15px;
+  background: #FF8500;
+  color: #fff;
+  border-radius: 4px;
+}
+#rsvp button:hover{
+  background: #EA7B00;
+  color: #fff;
+}

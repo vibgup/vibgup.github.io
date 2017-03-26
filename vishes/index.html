@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="vendors/jquery.min.js"></script>
 
     <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
     <script src="vendors/jquery.easings.min.js"></script>
@@ -28,7 +29,8 @@
         // sectionsColor: ['#8beaf7', '#fe87a1', '#ec4e7f', '#df4a4d', '#44b4c6'],
         // sectionsColor: ['#1d125e', '#8f58c0', '#a62156', '#91282f', '#451443'],
         // sectionsColor: ['#4ca7c3', '#c9ac67', '#f66496', '#f06867', '#e2533c'],
-        sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#eaca5a'], // INFO: color left out #3244b6
+        // sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#eaca5a'], // INFO: color left out #3244b6
+        sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#d24b29'], // INFO: color left out #3244b6
         scrollingSpeed: 700,
         // fadingEffect: true,
         animateAnchor: true,
@@ -37,6 +39,7 @@
         // navigationPosition: 'right',
         navigationTooltips: ['Welcome', 'Invite', 'Sangeet', 'Shaadi', 'RSVP'],
         responsiveWidth: 900,
+        // verticalCentered: false,
       });
 
       //Program a custom submit function for the form
@@ -80,58 +83,11 @@
     });
     </script>
 
-    <style type="text/css">
-      .section {
-        /*text-align: center;*/
-        color: white;
-        font-family: 'Lato', sans-serif;
-      }
-      .section h1{
-        font-size: 6em;
-        /*text-align: center;*/
-        font-family: 'Lobster', cursive;
-      }
-      .text-center{
-        text-align: center;
-      }
-      /* Defining each sectino background and styles
-      * --------------------------------------- */
-      #invite{
-        background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#faa127));
-        background: -webkit-linear-gradient(#31a0c4, #faa127);
-        background: linear-gradient(#31a0c4,#faa127);
-      }
-      #sangeet-sagai{
-        background: -webkit-gradient(linear, top left, bottom left, from(#faa127), to(#de4a93));
-        background: -webkit-linear-gradient(#faa127, #de4a93);
-        background: linear-gradient(#faa127,#de4a93);
-      }
-      #shaadi-reception{
-        background: -webkit-gradient(linear, top left, bottom left, from(#de4a93), to(#d24b29));
-        background: -webkit-linear-gradient(#de4a93, #d24b29);
-        background: linear-gradient(#de4a93, #d24b29);
-      }
-      #rsvp{
-        background: -webkit-gradient(linear, top left, bottom left, from(#d24b29), to(#eaca5a));
-        background: -webkit-linear-gradient(#d24b29, #eaca5a);
-        background: linear-gradient(#d24b29, #eaca5a);
-      }
-      .img-responsive{
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-      }
-      .fix-width{
-        max-width: 1000px;
-        margin: auto;
-      }
-      .margin-auto{
-        margin: auto;
-      }
-    </style>
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" > -->
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/radio_checkbox.css">
 
   </head>
   <body>
@@ -214,28 +170,64 @@
           <h1 class="text-center">
             RSVP
           </h1>
-          <div class="text-center fix-width">
+          <div class="fix-width">
 
-            <form id="mG61Hd" action="" method="POST" target="no-target">
-              Name: <input type="text" autocomplete="off" tabindex="0" name="entry.2079980770" value="" required/><br/>
-              Email: <input type="email" autocomplete="off" tabindex="0" name="entry.1649810083" value="" required/><br/>
-              Number: <input type="tel" autocomplete="off" tabindex="0" name="entry.198363389" value="" required/><br/>
-              Attendance:
-              <input type="radio" name="entry.1074380710" value="Attending" required> Attending&nbsp;
-              <input type="radio" name="entry.1074380710" value="Not Attending" required> Not Attending&nbsp;
-              <input type="radio" name="entry.1074380710" value="Maybe" required> Maybe<br/>
-              Accomodation: <input type="checkbox" name="entry.268459441" value="true"><br/>
-              +1: <input type="checkbox" name="entry.675501304" value="true"><br/>
-              Message: <textarea tabindex="0" aria-label="Message" name="entry.1055560578"></textarea><br/>
-              <input type="hidden" name="fvv" value="1" /><br/>
-              <input type="hidden" name="draftResponse" value="[null,null,&quot;-575617995234521185&quot;] /"><br/>
-              <input type="hidden" name="pageHistory" value="0" /><br/>
-              <input type="hidden" name="fbzx" value="-575617995234521185" /><br/>
-              <button type="submit" form="mG61Hd" value="Submit">Submit</button>
-            </form>
+          <form id="mG61Hd" action="" method="POST" target="no-target">
+            <div class="row">
+              <div class="col-xs-12">
 
-          </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" autocomplete="off" tabindex="0" name="entry.2079980770" value="" placeholder="*Your Name" required/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-2">
+                    You Coming:
+                  </div>
+                  <div class="col-xs-4">
+                    <input id="radio1" type="radio" name="entry.1074380710" value="Attending" required><label for="radio1"><span><span></span></span>Yes</label>
+                    <input id="radio2" type="radio" name="entry.1074380710" value="Not Attending" required><label for="radio2"><span><span></span></span>No</label>
+                  </div>
+                  <div class="col-xs-3">
+                    <input id="checkbox1" type="checkbox" name="entry.268459441" value="true"><label for="checkbox1"><span></span>Acco Required</label>
+                  </div>
+                  <div class="col-xs-3">
+                    <input id="checkbox1" type="checkbox" name="entry.675501304" value="true"><label for="checkbox1"><span></span>+1</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="email" autocomplete="off" tabindex="0" name="entry.1649810083" value="" placeholder="*Your Email" required/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="tel" autocomplete="off" tabindex="0" name="entry.198363389" value="" placeholder="*Your Contact Number" required/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <textarea tabindex="0" aria-label="Message" name="entry.1055560578" placeholder="Your Message"></textarea><br/>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" form="mG61Hd" value="Submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="fvv" value="1" /><br/>
+            <input type="hidden" name="draftResponse" value="[null,null,&quot;-575617995234521185&quot;] /"><br/>
+            <input type="hidden" name="pageHistory" value="0" /><br/>
+            <input type="hidden" name="fbzx" value="-575617995234521185" /><br/>
+          </form>
+
         </div>
+      </div>
     </div>
   </body>
 </html>
