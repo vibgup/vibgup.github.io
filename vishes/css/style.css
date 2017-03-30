@@ -3,10 +3,41 @@
   color: white;
   font-family: 'Lato', sans-serif;
 }
-.section h1{
+.section .vs-h1{
   font-size: 6em;
   /*text-align: center;*/
   font-family: 'Lobster', cursive;
+  padding-bottom: 100px;
+}
+.section .vs-h2{
+  font-size: 5em;
+  /*text-align: center;*/
+  font-family: 'Lobster', cursive;
+}
+.section .vs-h3{
+  font-size: 3em;
+  /*text-align: center;*/
+  /*font-family: 'Lobster', cursive;*/
+}
+.section .vs-h4{
+  font-size: 2em;
+  /*text-align: center;*/
+  /*font-family: 'Lobster', cursive;*/
+}
+.section .vs-h5{
+  font-size: 1.5em;
+  /*text-align: center;*/
+  /*font-family: 'Lobster', cursive;*/
+}
+.section .vs-h6{
+  font-size: 1em;
+  /*text-align: center;*/
+  /*font-family: 'Lobster', cursive;*/
+}
+.section .vs-p{
+  font-size: 1em;
+  /*text-align: center;*/
+  /*font-family: 'Lobster', cursive;*/
 }
 .text-center{
   text-align: center;
@@ -48,7 +79,201 @@
   margin: auto;
 }
 
+.font-lobster{
+  font-family: 'Lobster', cursive;
+}
 
+.wid-100{
+  width: 100px;
+}
+.wid-200{
+  width: 200px;
+}
+.wid-300{
+  width: 300px;
+}
+.wid-500{
+  width: 500px;
+}
+.wid-700{
+  width: 700px;
+}
+.wid-900{
+  width: 900px;
+}
+.wid-1000{
+  width: 1000px;
+}
+
+.pad-t-5{
+  padding-top: 5px;
+}
+.pad-b-5{
+  padding-bottom: 5px;
+}
+.pad-t-10{
+  padding-top: 10px;
+}
+.pad-b-10{
+  padding-bottom: 10px;
+}
+.pad-t-10{
+  padding-top: 10px;
+}
+.pad-b-10{
+  padding-bottom: 10px;
+}
+.pad-t-10{
+  padding-top: 10px;
+}
+.pad-b-10{
+  padding-bottom: 10px;
+}
+.pad-t-20{
+  padding-top: 20px;
+}
+.pad-b-20{
+  padding-bottom: 20px;
+}
+.pad-t-30{
+  padding-top: 30px;
+}
+.pad-b-30{
+  padding-bottom: 30px;
+}
+.pad-t-40{
+  padding-top: 40px;
+}
+.pad-b-40{
+  padding-bottom: 40px;
+}
+.pad-t-50{
+  padding-top: 50px;
+}
+.pad-b-50{
+  padding-bottom: 50px;
+}
+.pad-t-60{
+  padding-top: 60px;
+}
+.pad-b-60{
+  padding-bottom: 60px;
+}
+.pad-t-70{
+  padding-top: 70px;
+}
+.pad-b-70{
+  padding-bottom: 70px;
+}
+.pad-t-80{
+  padding-top: 80px;
+}
+.pad-b-80{
+  padding-bottom: 80px;
+}
+.pad-t-90{
+  padding-top: 90px;
+}
+.pad-b-90{
+  padding-bottom: 90px;
+}
+.pad-t-100{
+  padding-top: 100px;
+}
+.pad-b-100{
+  padding-bottom: 100px;
+}
+
+.mar-t-5{
+  margin-top: 5px;
+}
+.mar-b-5{
+  margin-bottom: 5px;
+}
+.mar-t-10{
+  margin-top: 10px;
+}
+.mar-b-10{
+  margin-bottom: 10px;
+}
+.mar-t-10{
+  margin-top: 10px;
+}
+.mar-b-10{
+  margin-bottom: 10px;
+}
+.mar-t-10{
+  margin-top: 10px;
+}
+.mar-b-10{
+  margin-bottom: 10px;
+}
+.mar-t-20{
+  margin-top: 20px;
+}
+.mar-b-20{
+  margin-bottom: 20px;
+}
+.mar-t-30{
+  margin-top: 30px;
+}
+.mar-b-30{
+  margin-bottom: 30px;
+}
+.mar-t-40{
+  margin-top: 40px;
+}
+.mar-b-40{
+  margin-bottom: 40px;
+}
+.mar-t-50{
+  margin-top: 50px;
+}
+.mar-b-50{
+  margin-bottom: 50px;
+}
+.mar-t-60{
+  margin-top: 60px;
+}
+.mar-b-60{
+  margin-bottom: 60px;
+}
+.mar-t-70{
+  margin-top: 70px;
+}
+.mar-b-70{
+  margin-bottom: 70px;
+}
+.mar-t-80{
+  margin-top: 80px;
+}
+.mar-b-80{
+  margin-bottom: 80px;
+}
+.mar-t-90{
+  margin-top: 90px;
+}
+.mar-b-90{
+  margin-bottom: 90px;
+}
+.mar-t-100{
+  margin-top: 100px;
+}
+.mar-b-100{
+  margin-bottom: 100px;
+}
+
+.st-italic{
+  font-style: italic;
+}
+.st-bold{
+  font-weight: bold;
+}
+
+.vs-st-1{
+  font-style: italic;
+  font-size: 2em;
+}
 
 /*
   Form Styling
@@ -81,4 +306,52 @@
 #rsvp button:hover{
   background: #EA7B00;
   color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+/*
+  Ghost Buttons
+ */
+.ghost-button {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.ghost-button-full-color-fade {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.3s ease-out,
+  color 0.3s ease-out,
+  background-color 0.3s ease-out;
+}
+.ghost-button-full-color-fade:hover,
+.ghost-button-full-color-fade:active {
+  border-color: #fff;
+  color: #000;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in,
+  color 0.3s ease-in,
+  background-color 0.3s ease-in;
 }
