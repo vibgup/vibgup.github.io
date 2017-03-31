@@ -9,6 +9,36 @@
   <script type="text/javascript" src="extras/jquery-ui-1.8.20.custom.min.js"></script>
   <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
   <!-- <script type="text/javascript" src="lib/hash.js"></script> -->
+  <style media="screen">
+    #footer
+    {
+      background-color:white;
+      position:fixed;
+      bottom:0px;
+      left:0px;
+      right:0px;
+      height:100px;
+      margin-bottom:0px;
+      display: none;
+      text-align: center;
+      margin: 0;
+    }
+    #footer h3{
+      margin: 0;
+    }
+    .mar-20{
+      margin:20px 20px;
+    }
+    @media all and (orientation: portrait) {
+      #footer{
+        display: block;
+      }
+      body
+      {
+        margin-bottom:100px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -28,8 +58,15 @@
       <!-- <div class="bottom">
       <div id="slider-bar" class="turnjs-slider">
       <div id="slider"></div>
-    </div>
-  </div> -->
+    </div> -->
+  </div>
+  <div id="footer">
+    <h3>
+      <img src="https://cdn0.iconfinder.com/data/icons/mobile/100/3-512.png" height="100px" alt="" align="middle">
+      Please rotate your device, goto landscape mode for best viewing experience
+    </h3>
+  </div>
+
 </div>
 
 <script type="text/javascript">
