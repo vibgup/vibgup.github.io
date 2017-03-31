@@ -1,3 +1,7 @@
+p{
+  /*text-shadow: 2px 2px black;*/
+  text-shadow: 2px 2px 4px #3d3d3d;
+}
 .section {
   /*text-align: center;*/
   color: white;
@@ -50,20 +54,30 @@
 }
 /* Defining each sectino background and styles
 * --------------------------------------- */
+#intro{
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png");
+}
 #invite{
-  background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#faa127));
-  background: -webkit-linear-gradient(#31a0c4, #faa127);
-  background: linear-gradient(#31a0c4,#faa127);
+  /*background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#ac4ade));
+  background: -webkit-linear-gradient(#31a0c4, #ac4ade);
+  background: linear-gradient(#31a0c4,#ac4ade);
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png");*/
+  background: #ac4ade;
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png"); /* fallback */
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png"), linear-gradient(#31a0c4, #ac4ade); /* W3C */
 }
 #sangeet-sagai{
-  background: -webkit-gradient(linear, top left, bottom left, from(#faa127), to(#de4a93));
-  background: -webkit-linear-gradient(#faa127, #de4a93);
-  background: linear-gradient(#faa127,#de4a93);
+  background: #de4a93;
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png"); /* fallback */
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png"), linear-gradient(#ac4ade,#de4a93); /* W3C */
 }
 #shaadi-reception{
-  background: -webkit-gradient(linear, top left, bottom left, from(#de4a93), to(#d24b29));
-  background: -webkit-linear-gradient(#de4a93, #d24b29);
-  background: linear-gradient(#de4a93, #d24b29);
+  background: #d24b29;
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png"); /* fallback */
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png"), linear-gradient(#de4a93, #d24b29); /* W3C */
+}
+#rsvp{
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png");
 }
 .img-responsive{
   display: block;
@@ -268,6 +282,9 @@
 }
 .st-bold{
   font-weight: bold;
+}
+.st-invisible{
+  display: none;
 }
 
 .vs-st-1{

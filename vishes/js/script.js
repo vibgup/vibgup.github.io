@@ -18,6 +18,8 @@ $(document).ready(function() {
     // verticalCentered: false,
   });
 
+  document.getElementById("mG61Hd").reset();
+
   //Program a custom submit function for the form
   $("form#mG61Hd").submit(function(event){
 
@@ -38,9 +40,13 @@ $(document).ready(function() {
       success: function (returndata) {
         console.log(returndata);
         alert(returndata);
+        document.getElementById("mG61Hd").reset();
+        $('#success-response').show();
       },
       error: function (returndata) {
         console.log(returndata);
+        document.getElementById("mG61Hd").reset();
+        $('#success-response').show();
       }
     });
 
@@ -55,5 +61,15 @@ $(document).ready(function() {
     }
   });
 
+  var conditionalContent = $('#acco-input');
+  var group = $('input[type=radio][name=entry\\.1074380710]');
+  group.change(function() {
+    var attendingCheck = group.filter(':checked').val() === 'Attending';
+    conditionalContent.toggle(attendingCheck);
+    if(!attendingCheck){
+      $('#checkbox1').attr('checked', false);
+      $('#checkbox2').attr('checked', false);
+    }
+  }).change();
 
 });

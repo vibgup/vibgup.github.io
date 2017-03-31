@@ -44,11 +44,11 @@ input[type=checkbox]:not(old):checked + label > span:before{
   content     : '✓';
   display     : block;
   width       : 1em;
-  color       : rgb(153,204,102);
+  color       : rgb(210,75,41);
   font-size   : 0.875em;
   line-height : 1em;
   text-align  : center;
-  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  text-shadow : 0 0 0.0714em rgb(209, 43, 40);
   font-weight : bold;
 }
 
@@ -57,12 +57,12 @@ input[type=radio]:not(old):checked +  label > span > span{
   width            : 0.5em;
   height           : 0.5em;
   margin           : 0.125em;
-  border           : 0.0625em solid rgb(115,153,77);
+  border           : 0.0625em solid rgb(209, 43, 40);
   border-radius    : 0.125em;
-  background       : rgb(153,204,102);
-  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background       : rgb(210,75,41);
+  background-image :    -moz-linear-gradient(rgb(209, 43, 40),rgb(210,75,41));
+  background-image :     -ms-linear-gradient(rgb(209, 43, 40),rgb(210,75,41));
+  background-image :      -o-linear-gradient(rgb(209, 43, 40),rgb(210,75,41));
+  background-image : -webkit-linear-gradient(rgb(209, 43, 40),rgb(210,75,41));
+  background-image :         linear-gradient(rgb(209, 43, 40),rgb(210,75,41));
 }
