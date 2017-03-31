@@ -55,29 +55,29 @@ p{
 /* Defining each sectino background and styles
 * --------------------------------------- */
 #intro{
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png");
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
 }
 #invite{
   /*background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#ac4ade));
   background: -webkit-linear-gradient(#31a0c4, #ac4ade);
   background: linear-gradient(#31a0c4,#ac4ade);
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png");*/
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");*/
   background: #ac4ade;
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png"); /* fallback */
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png"), linear-gradient(#31a0c4, #ac4ade); /* W3C */
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); /* fallback */
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png"), linear-gradient(#31a0c4, #ac4ade); /* W3C */
 }
 #sangeet-sagai{
   background: #de4a93;
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png"); /* fallback */
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png"), linear-gradient(#ac4ade,#de4a93); /* W3C */
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); /* fallback */
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png"), linear-gradient(#ac4ade,#de4a93); /* W3C */
 }
 #shaadi-reception{
   background: #d24b29;
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png"); /* fallback */
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png"), linear-gradient(#de4a93, #d24b29); /* W3C */
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); /* fallback */
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png"), linear-gradient(#de4a93, #d24b29); /* W3C */
 }
 #rsvp{
-  background-image: url("https://www.transparenttextures.com/patterns/navy.png");
+  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
 }
 .img-responsive{
   display: block;
