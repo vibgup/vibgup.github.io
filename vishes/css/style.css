@@ -55,7 +55,9 @@ p{
 /* Defining each sectino background and styles
 * --------------------------------------- */
 #intro{
-  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+  background-image: url('../assets/path800.png'), url("https://www.transparenttextures.com/patterns/flowers.png");
+  background-position: center center, left top;
+  background-repeat: no-repeat, repeat;
 }
 #invite{
   /*background: -webkit-gradient(linear, top left, bottom left, from(#31a0c4), to(#ac4ade));
@@ -428,3 +430,7 @@ textarea {
   color 0.3s ease-in,
   background-color 0.3s ease-in;
 }
+
+/*#intro > .fp-tableCell{
+  background-image: url('../assets/g392.png');
+}*/
