@@ -16,6 +16,7 @@ $(document).ready(function() {
     navigationTooltips: ['Welcome', 'Invite', 'Sangeet', 'Shaadi', 'RSVP'],
     responsiveWidth: 900,
     // verticalCentered: false,
+    scrollOverflow: true,
   });
 
   document.getElementById("mG61Hd").reset();
