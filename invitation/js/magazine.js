@@ -2,7 +2,7 @@
  * Magazine sample
 */
 
-function addPage(page, book) {
+function addPage(page, book, fullCheck) {
 
 	var id, pages = book.turn('pages');
 
@@ -17,12 +17,12 @@ function addPage(page, book) {
 		element.html('<div class="gradient"></div><div class="loader"></div>');
 
 		// Load the page
-		loadPage(page, element);
+		loadPage(page, element, fullCheck);
 	}
 
 }
 
-function loadPage(page, pageElement) {
+function loadPage(page, pageElement, fullCheck) {
 
 	// Create an image element
 
@@ -48,7 +48,9 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
+	var pageSrc = fullCheck ? 'pages_full/' : 'pages/';
+
+	img.attr('src', pageSrc +  page + '.jpg');
 
 	loadRegions(page, pageElement);
 
