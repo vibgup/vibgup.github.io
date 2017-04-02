@@ -55,7 +55,7 @@ p{
 /* Defining each sectino background and styles
 * --------------------------------------- */
 #intro{
-  background-image: url('../assets/path800.png'), url("https://www.transparenttextures.com/patterns/flowers.png");
+  background-image: url('../assets/path800.gif'), url("https://www.transparenttextures.com/patterns/flowers.png");
   background-position: center center, left top;
   background-repeat: no-repeat, repeat;
 }
