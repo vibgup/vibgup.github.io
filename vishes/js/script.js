@@ -6,7 +6,8 @@ $(document).ready(function() {
     // sectionsColor: ['#1d125e', '#8f58c0', '#a62156', '#91282f', '#451443'],
     // sectionsColor: ['#4ca7c3', '#c9ac67', '#f66496', '#f06867', '#e2533c'],
     // sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#eaca5a'], // INFO: color left out #3244b6
-    sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#d24b29'], // INFO: color left out #3244b6
+    // sectionsColor: ['#31a0c4', '#faa127', '#de4a93', '#d24b29', '#d24b29'], // INFO: color left out #3244b6
+    sectionsColor: sectionsColor,
     scrollingSpeed: 700,
     // fadingEffect: true,
     animateAnchor: true,
